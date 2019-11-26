@@ -53,19 +53,43 @@ class Products with ChangeNotifier {
   List<Product> get items {
     // if(_showFavouritesOnly){
     //   return _items.where((prodItem) => prodItem.isFavorite).toList();
-    // } 
-      return [..._items];
+    // }
+    return [..._items];
   }
 
   List<Product> get favoriteItems {
     return _items.where((prodItem) => prodItem.isFavorite).toList();
   }
 
-  Product finfById(String id){
+  Product finfById(String id) {
     return _items.firstWhere((prod) => prod.id == id);
   }
 
-  void addProducts() {
+  void addProducts(Product product) {
+    final newProduct = Product(
+      id: DateTime.now().toString(),
+      title: product.title,
+      price: product.price,
+      description: product.description,
+      imageUrl: product.imageUrl,
+    );
+    _items.add(newProduct);
+    // _items.insert(0, newProduct); // at the start of the list
+    notifyListeners();
+  }
+
+  void updateProduct(String id, Product existingProduct) {
+    final prodIndex = _items.indexWhere((prod) => prod.id == id);
+    if (prodIndex >= 0) {
+      _items[prodIndex] = existingProduct;
+      notifyListeners();
+    } else {
+      print('trying to update a product that not in the product list');
+    }
+  }
+
+  void deleteProduct(String id) {
+    _items.removeWhere((prod) => prod.id == id);
     notifyListeners();
   }
 }
