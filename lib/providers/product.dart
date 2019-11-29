@@ -20,15 +20,28 @@ class Product with ChangeNotifier {
     this.isFavorite = false,
   });
 
-  void toggleFavoriteStatus() {
-    isFavorite = !isFavorite;
-    final url = 'https://shops-app-1a992.firebaseio.com/products/$id.json';
-    http.patch(
-      url,
-      body: json.encode({
-        'isFavorite' : isFavorite,
-      }),
-    );
+  void _setFabValue(bool newValue) {
+    isFavorite = newValue;
     notifyListeners();
+  }
+
+  Future<void> toggleFavoriteStatus() async {
+    final oldStatus = isFavorite;
+    isFavorite = !isFavorite;
+    notifyListeners();
+    final url = 'https://shops-app-1a992.firebaseio.com/products/$id.json';
+    try {
+      final response = await http.patch(
+        url,
+        body: json.encode({
+          'isFavorite': isFavorite,
+        }),
+      );
+      if (response.statusCode >= 400) {
+        _setFabValue(oldStatus);
+      }
+    } catch (error) {
+      _setFabValue(oldStatus);
+    }
   }
 }
