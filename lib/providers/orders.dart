@@ -61,7 +61,7 @@ class Orders with ChangeNotifier {
   }
 
   Future<void> addOrder(List<CartItem> cartProducts, double total) async {
-    const url = 'https://shops-app-1a992.firebaseio.com/orders.json';
+    final url = 'https://shops-app-1a992.firebaseio.com/orders.json?auth=$authToken';
     final timestamp = DateTime.now();
     final response = await http.post(
       url,
