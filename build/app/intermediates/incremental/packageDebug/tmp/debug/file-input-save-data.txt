@@ -1,17 +1,18 @@
 #Internal package file, do not edit.
-#Sun Dec 01 13:44:51 WAT 2019
+#Mon Dec 02 08:16:09 WAT 2019
 4.path=flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
 13.baseType=DIRECTORY
 8.set=ASSET
 6.path=flutter_assets/vm_snapshot_data
 0.baseType=DIRECTORY
-10.path=flutter_assets/isolate_snapshot_data
+10.path=flutter_assets/assets/images/product-placeholder.png
 5.baseType=DIRECTORY
 1.base=C\:\\Users\\MODTrust ICT Team02\\Desktop\\flutter\\projects\\shops_app\\build\\app\\intermediates\\transforms\\mergeJniLibs\\debug\\0
 8.path=flutter_assets/assets/fonts/Anton-Regular.ttf
-12.path=flutter_assets/AssetManifest.json
+12.path=flutter_assets/assets/fonts/Lato-Bold.ttf
 3.base=C\:\\Users\\MODTrust ICT Team02\\Desktop\\flutter\\projects\\shops_app\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
-14.path=flutter_assets/assets/fonts/Lato-Regular.ttf
+14.path=flutter_assets/kernel_blob.bin
+15.set=ASSET
 4.set=ASSET
 5.base=C\:\\Users\\MODTrust ICT Team02\\Desktop\\flutter\\projects\\shops_app\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 7.base=C\:\\Users\\MODTrust ICT Team02\\Desktop\\flutter\\projects\\shops_app\\build\\app\\intermediates\\transforms\\mergeJniLibs\\debug\\0
@@ -21,6 +22,7 @@
 1.baseType=DIRECTORY
 11.set=ASSET
 0.set=NATIVE_RESOURCE
+15.base=C\:\\Users\\MODTrust ICT Team02\\Desktop\\flutter\\projects\\shops_app\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 14.baseType=DIRECTORY
 6.baseType=DIRECTORY
 7.set=NATIVE_RESOURCE
@@ -28,6 +30,7 @@
 3.set=ASSET
 2.baseType=DIRECTORY
 10.baseType=DIRECTORY
+15.baseType=DIRECTORY
 1.path=lib/armeabi-v7a/libflutter.so
 7.baseType=DIRECTORY
 3.path=flutter_assets/FontManifest.json
@@ -35,13 +38,14 @@
 5.path=flutter_assets/fonts/MaterialIcons-Regular.ttf
 0.base=C\:\\Users\\MODTrust ICT Team02\\Desktop\\flutter\\projects\\shops_app\\build\\app\\intermediates\\transforms\\mergeJniLibs\\debug\\0
 7.path=lib/x86_64/libflutter.so
-11.path=flutter_assets/assets/fonts/Lato-Bold.ttf
+11.path=flutter_assets/isolate_snapshot_data
 9.path=flutter_assets/LICENSE
 6.set=ASSET
 2.base=C\:\\Users\\MODTrust ICT Team02\\Desktop\\flutter\\projects\\shops_app\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
-13.path=flutter_assets/kernel_blob.bin
+13.path=flutter_assets/AssetManifest.json
 11.baseType=DIRECTORY
 4.base=C\:\\Users\\MODTrust ICT Team02\\Desktop\\flutter\\projects\\shops_app\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+15.path=flutter_assets/assets/fonts/Lato-Regular.ttf
 3.baseType=DIRECTORY
 6.base=C\:\\Users\\MODTrust ICT Team02\\Desktop\\flutter\\projects\\shops_app\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 10.base=C\:\\Users\\MODTrust ICT Team02\\Desktop\\flutter\\projects\\shops_app\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
@@ -52,7 +56,7 @@
 12.base=C\:\\Users\\MODTrust ICT Team02\\Desktop\\flutter\\projects\\shops_app\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 14.base=C\:\\Users\\MODTrust ICT Team02\\Desktop\\flutter\\projects\\shops_app\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 9.set=ASSET
-count=15
+count=16
 12.baseType=DIRECTORY
 4.baseType=DIRECTORY
 5.set=ASSET
